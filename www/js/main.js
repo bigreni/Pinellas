@@ -67,11 +67,11 @@
    function checkFirstUse()
     {
         $(".dropList").select2();
-        window.ga.startTrackerWithId('UA-88579601-19', 1, function(msg) {
-            window.ga.trackView('Home');
-        });  
         initApp();
         askRating();
+        //window.ga.startTrackerWithId('UA-88579601-19', 1, function(msg) {
+        //    window.ga.trackView('Home');
+        //});
         //document.getElementById("screen").style.display = 'none';     
     }
 
