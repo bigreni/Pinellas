@@ -25,9 +25,6 @@
     "cordova-plugin-geolocation": {
       "GPS_REQUIRED": "true",
       "PACKAGE_NAME": "com.pinellas.free"
-    },
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.pinellas.free"
     }
   },
   "dependent_plugins": {

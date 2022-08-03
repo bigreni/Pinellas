@@ -45,13 +45,3 @@
         return null;
     };
 })(jQuery);
-
-function loadMain()
-{
-    window.location = "index.html";
-}
-
-function loadFaves()
-{
-    window.location = "Favorites.html";
-}

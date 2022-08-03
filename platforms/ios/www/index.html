@@ -15,8 +15,6 @@
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <link href="css/select2.min.css" rel="stylesheet" />
 <script src="js/select2.min.js"></script>
-<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
-<script src="js/jquery.sidr.min.js"></script>
 <title>PSTA Arrivals</title>
     <style>
             /* Hide all the app pages until jQuery Mobile inits to
@@ -31,7 +29,7 @@
                 left: 0;
                 right: 0;
                 z-index:1001;
-                background: lightgrey;
+                background:  url(https://s3.us-east-2.amazonaws.com/bigreni.com/img/status.gif) no-repeat center center;
                 text-shadow: none;
                 color: black;
             }
@@ -53,18 +51,11 @@
                 onLoad();
                 //document.getElementById("screen").style.display = 'none';
             };
-            document.getElementById("screen").innerHTML = 'Loading...';
             document.getElementById("screen").style.display = 'block';
         </script> 
     <div id="fullpage" data-role="page">
 		<div id="contentBox" class="box">
                  <h3>PSTA Arrival Times</h3>
-            <!--<div id="sidr">
-              <ul>
-                <li><a href="index.html" >Arrivals</a></li>
-                <li><a href="javascript:loadFaves();" >Favorites</a></li>
-              </ul>
-            </div>-->
 			<table class="routeBox" style="width: 100vw;">
                 <tr>
                     <td colspan="2">Show all routes for the stop: 
@@ -83,10 +74,9 @@
                         <select id="MainMobileContent_routeList" class="dropList" style="width:90vw;" onchange="getDirections();">
                             <option value="---">Select a Route</option>
                             <option value="CAT">CAT - CENTRAL AVENUE TROLLEY</option>
-                            <option value="DPC">DPC - DUNEDIN/PALM HARBOR CONNECTOR</option>
-                            <option value="OTC">OTC - OLSDMAR/TAMPA CONNECTOR</option>
-                            <option value="SBT">SBT - SUNCOAST BEACH TROLLEY</option>
-                            <option value="SHC">SHC - SAFETY HARBOR CONNECTOR </option>
+                            <option value="JTNB">JTNB - JOLLEY TROLLEY NORTH BEACH </option>
+                            <option value="JTSB">JTSB - JOLLEY TROLLEY SOUTH BEACH</option>
+                            <option value="SCBT">SCBT - SUNCOAST BEACH TROLLEY</option>
                             <option value="4">4 - ROY HANNA DR S/ ST PETE/ 34TH ST</option>
                             <option value="5">5 - ST PETERSBURG/TYRONE SQUARE MALL</option>
                             <option value="7">7 - ST PETERSBURG/TYRONE SQUARE MALL</option>
@@ -104,6 +94,7 @@
                             <option value="34">34 - ST.PETERSBURG/LARGO TRANSIT CENT</option>
                             <option value="38">38 - DOWNTOWN ST PETE/TYRONE SQUARE M</option>
                             <option value="52">52 - GRAND CENTRAL /CLEARWATER</option>
+                            <option value="52LX">52LX - 52 LIMITED STOPS</option>
                             <option value="58">58 - GATEWAY MALL/SEMINOLE MALL</option>
                             <option value="59">59 - ST PETE/INDIAN ROCKS BEACH</option>
                             <option value="60">60 - PARK STREET TERMINAL /MULLEN BOO</option>
@@ -120,10 +111,11 @@
                             <option value="78">78 - CLEARWATER/WESTFIELD SHOPPING</option>
                             <option value="79">79 - ST PETERSBURG/LARGO TRANSIT CTN</option>
                             <option value="90">90 - GRAND CENTRAL/ST. PETE BEACH</option>
-                            <option value="97">97 - ST PETE/CARILLON</option>
-                            <option value="98">98 - PARK STREET TERMINAL/CARILLON</option>
-                            <option value="100">100 - COMMUTER SERVICE/GATEWAY MALL/DO</option>
-                            <option value="300X">300X - ULMERTON RD/DOWNTOWN TAMPA</option>
+                            <option value="100">100 - COMMUTER SERVICE/SAINT PETERSBUR</option>
+                            <option value="300">300 - EXPRESS SERVICE/AIRPORT/DOWNTOWN</option>
+                            <option value="812">812 - COUNTRYSIDE/TAMPA </option>
+                            <option value="813">813 - COUNTRYSIDE / PALM HARBOR</option>
+                            <option value="814">814 - COUNTRYSIDE / SAFETY HARBOR </option>
                         </select>
                     </div>
                 </td>
