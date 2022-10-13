@@ -16,9 +16,9 @@
     "plugins": {
       "cordova-plugin-admobpro": {},
       "cordova-admobsdk": {},
-      "cordova-plugin-wkwebview-file-xhr": {},
       "cordova-plugin-idfa": {},
-      "cordova-plugin-inappbrowser": {}
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-wkwebview-file-xhr": {}
     },
     "platforms": [
       "android",
