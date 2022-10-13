@@ -30,6 +30,7 @@
     <preference name="android-installLocation" value="auto" />
     <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="AndroidInsecureFileModeEnabled" value="true" />
+    <preference name="InterceptRemoteRequests" value="all" />
     <cdv:plugin name="cordova-plugin-wkwebview-file-xhr" source="npm"/>
     <cdv:plugin name="cordova-plugin-statusbar" source="npm"/>
     <cdv:plugin name="cordova-plugin-device" source="npm" />
