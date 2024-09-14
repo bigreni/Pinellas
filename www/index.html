@@ -38,8 +38,8 @@
 <body>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript">
-        document.write('<script type="text/javascript" src="https://s3.us-east-2.amazonaws.com/bigreni.com/js/pinellas/main.js?cb=' +cachebuster+'"></scr' + 'ipt>');
-        //document.write('<script type="text/javascript" src="js/main.js?cb=' +cachebuster+'"></scr' + 'ipt>');
+        document.write('<script type="text/javascript" src="https://s3.us-east-2.amazonaws.com/bigreni.com/js/pinellas/mainpro.js?cb=' +cachebuster+'"></scr' + 'ipt>');
+        //document.write('<script type="text/javascript" src="js/mainpro.js?cb=' +cachebuster+'"></scr' + 'ipt>');
     </script>	
 	<script type="text/javascript" src="js/jsrender.min.js"></script>
 	<script type="text/javascript" src="js/jquery.cookie.js"></script>
@@ -76,7 +76,9 @@
                             <option value="CAT">CAT - CENTRAL AVENUE TROLLEY</option>
                             <option value="JTNB">JTNB - JOLLEY TROLLEY NORTH BEACH </option>
                             <option value="JTSB">JTSB - JOLLEY TROLLEY SOUTH BEACH</option>
+                            <option value="LOOPR">LOOPR - NORTH NO DALI</option>
                             <option value="SCBT">SCBT - SUNCOAST BEACH TROLLEY</option>
+                            <option value="SUN">SUN - ST PETE BEACH TO  DNTWN ST PETE</option>
                             <option value="4">4 - ROY HANNA DR S/ ST PETE/ 34TH ST</option>
                             <option value="5">5 - ST PETERSBURG/TYRONE SQUARE MALL</option>
                             <option value="7">7 - ST PETERSBURG/TYRONE SQUARE MALL</option>
@@ -114,8 +116,6 @@
                             <option value="100">100 - COMMUTER SERVICE/SAINT PETERSBUR</option>
                             <option value="300">300 - EXPRESS SERVICE/AIRPORT/DOWNTOWN</option>
                             <option value="812">812 - COUNTRYSIDE/TAMPA </option>
-                            <option value="813">813 - COUNTRYSIDE / PALM HARBOR</option>
-                            <option value="814">814 - COUNTRYSIDE / SAFETY HARBOR </option>
                         </select>
                     </div>
                 </td>
@@ -141,6 +141,9 @@
 					<td><div class="wait"><img id="stopWait" class="hidden wait" src="img/circle.gif" alt="Please wait"/></div></td>
 				</tr>
 			</table>
+            <div id="divSubscribe" style="display: none;">
+                <h4 style="text-align:center;"><button id="btnSubscribe" onclick="proSubscription();" class="premium">Remove Ads</button></h4>
+            </div>
                 <h2 style="text-align:center;">
                     <button onclick="saveFavorites();" id="btnSave" style="border:none; background-color: lightgreen; color:black;visibility: hidden;">&#x2764; Add to favorites</button>
                 </h2>
